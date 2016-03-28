@@ -1,0 +1,23 @@
+<template name="postItem">
+  <div class="container">
+    <header>
+      <h1>post page</h1>
+      <a href="/">Admin</a>
+    </header>
+    <hr/>
+    {{#if Template.subscriptionsReady}}
+      {{#with post}}
+       <h3>{{title}}</h3>
+       <img src="{{image.url}}" width="640px">
+       <br>
+       {{body}}
+       {{/with}}
+     {{else}}
+        <p>loading....</p>
+     {{/if}}
+    <hr/>
+    <footer>
+      <p>meteor</p>
+    </footer>
+</div>
+</template>
