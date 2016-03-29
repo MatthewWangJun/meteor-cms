@@ -6,7 +6,7 @@ Template.postsList.onCreated(function(){
 });
 Template.postsList.helpers({
   posts: function(){
-    return Posts.find({},{sort:{created:-1}})
+    return Posts.find({},{sort:{created: -1}})
   },
   pathForPost: function() {
     var post = this;
